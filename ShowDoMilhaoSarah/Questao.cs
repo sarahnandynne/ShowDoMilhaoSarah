@@ -56,6 +56,10 @@ public class Questao
         }
         else
         {
+            var botaocorreto = QualBotao (respostacorreta);
+            var botaoincorreto = QualBotao (RR);
+            botaocorreto.BackgroundColor = Colors.Yellow;
+            botaoincorreto.BackgroundColor = Colors.Red;
             return false;
         }
     } 
@@ -65,5 +69,11 @@ public class Questao
         return btResposta01;
         else if (RR == 2)
         return btResposta02;
+        else if (RR == 3)
+        return btResposta03;
+        else if (RR == 4)
+        return btResposta04;
+        else if (RR == 5)
+        return btResposta05;
     }
 }

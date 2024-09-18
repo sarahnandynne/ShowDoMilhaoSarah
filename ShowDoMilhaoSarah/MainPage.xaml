@@ -2,20 +2,134 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShowDoMilhaoSarah.MainPage"
-             BackgroundColor="Black">
+             Shell.NavBarIsVisible="false"
+             BackgroundColor="White">
 
-<Image Source="goldenquestions.png"
-       Aspect="AspectFill"/>
+<Grid ColumnSpacing="2"
+      Padding="10"
+      RowSpacing="5">
 
-<Grid VerticalOptions="Center" HorizontalOptions="Center">
-        <ImageButton Source="botao.png" 
-                     Aspect="AspectFit"
-                     BackgroundColor="Transparent"
-                     HeightRequest="100"
-                     WidthRequest="400"
-                     Clicked="JogarClicked">
-        </ImageButton>
-</Grid>
+                <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="100"/>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="55"/>
+                        <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source="showdomilhao.png"
+                       Grid.Row="0"
+                       Grid.ColumnSpan="3"
+                       Aspect="AspectFill"/>
+
+                <Label Text="PERGUNTA:"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center"
+                       Grid.Row="1"
+                       Grid.ColumnSpan="3"
+                       FontSize="18"
+                       BackgroundColor="#FFCD75"
+                       TextColor="Black"/>
+
+
+                <Button Text="A-"
+                        BorderWidth="2"
+                        BackgroundColor="#000099"
+                        TextColor="White"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        BorderColor="Black"
+                        Grid.Row="2"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"/>
+
+                <Button Text="B-"
+                        BorderWidth="2"
+                        BackgroundColor="#000099"
+                        TextColor="White"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        BorderColor="Black"
+                        Grid.Row="3"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"/>
+
+                <Button Text="C-"
+                        BorderWidth="2"
+                        BackgroundColor="#000099"
+                        TextColor="White"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        BorderColor="Black"
+                        Grid.Row="4"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"/>
+
+                <Button Text="D-"
+                        BorderWidth="2"
+                        BackgroundColor="#000099"
+                        TextColor="White"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        BorderColor="Black"
+                        Grid.Row="5"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"/>
+
+                <Button Text="E-"
+                        BorderWidth="2"
+                        BackgroundColor="#000099"
+                        TextColor="White"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        BorderColor="Black"
+                        Grid.Row="6"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="3"/>
+
+
+                <Button Text="1 INCORRETA"
+                        BorderWidth="2"
+                        Padding=".12"
+                        TextColor="Black"
+                        BackgroundColor="#00CCCC"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        BorderColor="Black"
+                        Grid.Row="7"
+                        Grid.Column="0"/>
+
+                <Button Text="AMIGOS"
+                        BorderWidth="2"
+                        Padding=".12"
+                        TextColor="Black"
+                        BackgroundColor="#00CCCC"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        BorderColor="Black"
+                        Grid.Row="7"
+                        Grid.Column="1"/>
+
+                <Button Text="+1 CHANCE"
+                        BorderWidth="2"
+                        Padding=".12"
+                        TextColor="Black"
+                        BackgroundColor="#00CCCC"
+                        Margin="0,0,0,10"
+                        FontSize="18"
+                        BorderColor="Black"
+                        Grid.Row="7"
+                        Grid.Column="2"/>
+        </Grid>
 </ContentPage>
 
        

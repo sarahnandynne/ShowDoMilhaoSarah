@@ -11,6 +11,7 @@ public class Questao
     public string resposta5 { get; set; }
     public int nivelpergunta { get; set; }
     public int respostacorreta { get; set;}
+
     public void desenhar()
     {
         labelPergunta.Text = pergunta;
@@ -75,5 +76,7 @@ public class Questao
         return btResposta04;
         else if (RR == 5)
         return btResposta05;
+        else
+        return null;
     }
 }

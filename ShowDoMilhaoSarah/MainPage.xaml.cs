@@ -9,10 +9,5 @@ namespace ShowDoMilhaoSarah
             InitializeComponent();
         }
 
-        private void JogarClicked(object sender, EventArgs e)
-        {
-            if (Application.Current != null)
-    	Application.Current.MainPage = new Perguntas();
-        }
     }
 }

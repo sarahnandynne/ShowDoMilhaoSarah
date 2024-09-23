@@ -11,6 +11,7 @@ public class Questao
     public string resposta5 { get; set; }
     public int nivelpergunta { get; set; }
     public int respostacorreta { get; set;}
+    public int Nivel;
 
     public void desenhar()
     {

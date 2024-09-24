@@ -21,6 +21,17 @@ public class Questao
         btResposta03.Text = resposta3;
         btResposta04.Text = resposta4;
         btResposta05.Text = resposta5;
+
+        btResposta01!.BackgroundColor = Colors.DarkBlue;
+        btResposta01!.TextColor       = Colors.White;
+        btResposta02!.BackgroundColor = Colors.DarkBlue;
+        btResposta02!.TextColor       = Colors.White;
+        btResposta03!.BackgroundColor = Colors.DarkBlue;
+        btResposta03!.TextColor       = Colors.White;
+        btResposta04!.BackgroundColor = Colors.DarkBlue;
+        btResposta04!.TextColor       = Colors.White;
+        btResposta05!.BackgroundColor = Colors.DarkBlue;
+        btResposta05!.TextColor       = Colors.White;
     }
 
     private Label labelPergunta;

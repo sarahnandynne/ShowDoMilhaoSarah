@@ -32,16 +32,26 @@
                        Grid.ColumnSpan="3"
                        Aspect="AspectFill"/>
 
-                <Label Text="PONTUAÇÃO:"
+                <Label x:Name="labelPontuacao"
                        HorizontalOptions="Fill"
                        HorizontalTextAlignment="Center"
                        Grid.Row="1"
-                       Grid.ColumnSpan="3"
+                       Grid.Column="0"
+                       Grid.ColumnSpan="2"
+                       FontSize="15"
+                       BackgroundColor="#a7e0d8"
+                       TextColor="Black"/>
+                
+                <Label x:Name="labelNivel"
+                       HorizontalOptions="Fill"
+                       HorizontalTextAlignment="Center"
+                       Grid.Row="1"
+                       Grid.Column="2"
                        FontSize="15"
                        BackgroundColor="#a7e0d8"
                        TextColor="Black"/>
 
-                <Label Text="PERGUNTA:"
+                <Label x:Name="labelPergunta"
                        HorizontalOptions="Fill"
                        HorizontalTextAlignment="Center"
                        Grid.Row="2"
@@ -51,7 +61,8 @@
                        TextColor="Black"/>
 
 
-                <Button Text="A-"
+                <Button x:Name="btResposta01"
+                        Clicked="Resposta1Clicked"
                         BorderWidth="2"
                         BackgroundColor="#000099"
                         TextColor="White"
@@ -62,7 +73,8 @@
                         Grid.Column="0"
                         Grid.ColumnSpan="3"/>
 
-                <Button Text="B-"
+                <Button x:Name="btResposta02"
+                        Clicked="Resposta2Clicked"
                         BorderWidth="2"
                         BackgroundColor="#000099"
                         TextColor="White"
@@ -73,7 +85,8 @@
                         Grid.Column="0"
                         Grid.ColumnSpan="3"/>
 
-                <Button Text="C-"
+                <Button x:Name="btResposta03"
+                        Clicked="Resposta3Clicked"
                         BorderWidth="2"
                         BackgroundColor="#000099"
                         TextColor="White"
@@ -84,7 +97,8 @@
                         Grid.Column="0"
                         Grid.ColumnSpan="3"/>
 
-                <Button Text="D-"
+                <Button x:Name="btResposta04"
+                        Clicked="Resposta4Clicked"
                         BorderWidth="2"
                         BackgroundColor="#000099"
                         TextColor="White"
@@ -95,7 +109,8 @@
                         Grid.Column="0"
                         Grid.ColumnSpan="3"/>
 
-                <Button Text="E-"
+                <Button x:Name="btResposta05"
+                        Clicked="Resposta5Clicked"
                         BorderWidth="2"
                         BackgroundColor="#000099"
                         TextColor="White"

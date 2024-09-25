@@ -1,7 +1,8 @@
-public class Questao
-{
-    public Questao()
+public class Questao:IEquatable<Questao>
+{ 
+    public bool Equals(Questao q)
     {
+        return this.Nivel == q.Nivel;
     }
     public string pergunta { get; set; }
     public string resposta1 { get; set; }
@@ -12,7 +13,7 @@ public class Questao
     public int nivelpergunta { get; set; }
     public int respostacorreta { get; set;}
     public int Nivel;
-
+    
     public void desenhar()
     {
         labelPergunta.Text = pergunta;

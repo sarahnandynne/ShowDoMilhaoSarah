@@ -4,8 +4,8 @@ public class Gerenciador
 {
     Label labelPontuacao;
     Label labelNivel;
-    List<Questao> ListaQuestoes = new List<Questao>();
-    List<int> ListaQuestoesRespondidas = new List<int>();
+    List<Questao> ListaTodasQuestoes = new List<Questao>();
+    List<Questao> ListaTodasQuestoesRespondidas = new List<Questao>();
     Questao QuestaoCorrente;
     public Gerenciador(Label LabelPerg, Button btResposta01, Button btResposta02, Button btResposta03, Button btResposta04, Button btResposta05, Label labelPontuacao, Label labelNivel)
     {
@@ -25,7 +25,7 @@ public class Gerenciador
         Questao01.resposta4 = "Jair Bolsonaro";
         Questao01.resposta5 = "Thiago Macedo";
         Questao01.respostacorreta = 2;
-        ListaQuestoes.Add(Questao01);
+        ListaTodasQuestoes.Add(Questao01);
 
         var Questao02 = new Questao();
         Questao02.Nivel = 1;
@@ -37,7 +37,7 @@ public class Gerenciador
         Questao02.resposta4 = "K2";
         Questao02.resposta5 = "Monte McKinley";
         Questao02.respostacorreta = 3;
-        ListaQuestoes.Add(Questao02);
+        ListaTodasQuestoes.Add(Questao02);
 
         var Questao03 = new Questao();
         Questao03.Nivel = 1;
@@ -49,7 +49,7 @@ public class Gerenciador
         Questao03.resposta4 = "Carl Jung";
         Questao03.resposta5 = "Alfred Adler";
         Questao03.respostacorreta = 1;
-        ListaQuestoes.Add(Questao03);
+        ListaTodasQuestoes.Add(Questao03);
 
         var Questao04 = new Questao();
         Questao04.Nivel = 1;
@@ -61,7 +61,7 @@ public class Gerenciador
         Questao04.resposta4 = "Claude Monet";
         Questao04.resposta5 = "Salvador Dalí";
         Questao04.respostacorreta = 3;
-        ListaQuestoes.Add(Questao04);
+        ListaTodasQuestoes.Add(Questao04);
 
         var Questao05 = new Questao();
         Questao05.Nivel = 1;
@@ -73,7 +73,7 @@ public class Gerenciador
         Questao05.resposta4 = "H2O2";
         Questao05.resposta5 = "CH4";
         Questao05.respostacorreta = 1;
-        ListaQuestoes.Add(Questao05);
+        ListaTodasQuestoes.Add(Questao05);
 
         var Questao06 = new Questao();
         Questao06.Nivel = 1;
@@ -85,7 +85,7 @@ public class Gerenciador
         Questao06.resposta4 = "Europa";
         Questao06.resposta5 = "Oceania";
         Questao06.respostacorreta = 3;
-        ListaQuestoes.Add(Questao06);
+        ListaTodasQuestoes.Add(Questao06);
 
         var Questao07 = new Questao();
         Questao07.Nivel = 1;
@@ -97,7 +97,7 @@ public class Gerenciador
         Questao07.resposta4 = "Iene";
         Questao07.resposta5 = "Rupia";
         Questao07.respostacorreta = 4;
-        ListaQuestoes.Add(Questao07);
+        ListaTodasQuestoes.Add(Questao07);
 
         var Questao08 = new Questao();
         Questao08.Nivel = 1;
@@ -109,7 +109,7 @@ public class Gerenciador
         Questao08.resposta4 = "David Bowie";
         Questao08.resposta5 = "Freddie Mercury";
         Questao08.respostacorreta = 2;
-        ListaQuestoes.Add(Questao08);
+        ListaTodasQuestoes.Add(Questao08);
 
         var Questao09 = new Questao();
         Questao09.Nivel = 1;
@@ -121,7 +121,7 @@ public class Gerenciador
         Questao09.resposta4 = "Rim";
         Questao09.resposta5 = "Estômago";
         Questao09.respostacorreta = 2;
-        ListaQuestoes.Add(Questao09);
+        ListaTodasQuestoes.Add(Questao09);
 
         var Questao10 = new Questao();
         Questao10.Nivel = 1;
@@ -133,7 +133,7 @@ public class Gerenciador
         Questao10.resposta4 = "Português";
         Questao10.resposta5 = "Italiano";
         Questao10.respostacorreta = 4;
-        ListaQuestoes.Add(Questao10);
+        ListaTodasQuestoes.Add(Questao10);
 
         var Questao11 = new Questao();
         Questao11.Nivel = 2;
@@ -145,7 +145,7 @@ public class Gerenciador
         Questao11.resposta4 = "Nikola Tesla";
         Questao11.resposta5 = "Stephen Hawking";
         Questao11.respostacorreta = 2;
-        ListaQuestoes.Add(Questao11);
+        ListaTodasQuestoes.Add(Questao11);
 
         var Questao12 = new Questao();
         Questao12.Nivel = 2;
@@ -157,7 +157,7 @@ public class Gerenciador
         Questao12.resposta4 = "Oceano Ártico";
         Questao12.resposta5 = "Oceano Antártico";
         Questao12.respostacorreta = 3;
-        ListaQuestoes.Add(Questao12);
+        ListaTodasQuestoes.Add(Questao12);
 
         var Questao13 = new Questao();
         Questao13.Nivel = 2;
@@ -169,7 +169,7 @@ public class Gerenciador
         Questao13.resposta4 = "Florença";
         Questao13.resposta5 = "Veneza";
         Questao13.respostacorreta = 1;
-        ListaQuestoes.Add(Questao13);
+        ListaTodasQuestoes.Add(Questao13);
 
         var Questao14 = new Questao();
         Questao14.Nivel = 2;
@@ -181,7 +181,7 @@ public class Gerenciador
         Questao14.resposta4 = "Vênus";
         Questao14.resposta5 = "Júpiter";
         Questao14.respostacorreta = 3;
-        ListaQuestoes.Add(Questao14);
+        ListaTodasQuestoes.Add(Questao14);
 
         var Questao15 = new Questao();
         Questao15.Nivel = 2;
@@ -193,7 +193,7 @@ public class Gerenciador
         Questao15.resposta4 = "Saturno";
         Questao15.resposta5 = "Vênus";
         Questao15.respostacorreta = 3;
-        ListaQuestoes.Add(Questao15);
+        ListaTodasQuestoes.Add(Questao15);
 
         var Questao16 = new Questao();
         Questao16.Nivel = 2;
@@ -205,7 +205,7 @@ public class Gerenciador
         Questao16.resposta4 = "Roma";
         Questao16.resposta5 = "Lisboa";
         Questao16.respostacorreta = 3;
-        ListaQuestoes.Add(Questao16);
+        ListaTodasQuestoes.Add(Questao16);
 
         var Questao17 = new Questao();
         Questao17.Nivel = 2;
@@ -217,7 +217,7 @@ public class Gerenciador
         Questao17.resposta4 = "Clarice Lispector";
         Questao17.resposta5 = "Carlos Drummond de Andrade";
         Questao17.respostacorreta = 1;
-        ListaQuestoes.Add(Questao17);
+        ListaTodasQuestoes.Add(Questao17);
 
         var Questao18 = new Questao();
         Questao18.Nivel = 2;
@@ -229,7 +229,7 @@ public class Gerenciador
         Questao18.resposta4 = "Oganessônio";
         Questao18.resposta5 = "Prata";
         Questao18.respostacorreta = 2;
-        ListaQuestoes.Add(Questao18);
+        ListaTodasQuestoes.Add(Questao18);
 
         var Questao19 = new Questao();
         Questao19.Nivel = 2;
@@ -241,7 +241,7 @@ public class Gerenciador
         Questao19.resposta4 = "Deserto da Arábia";
         Questao19.resposta5 = "Deserto de Kalahari";
         Questao19.respostacorreta = 2;
-        ListaQuestoes.Add(Questao19);
+        ListaTodasQuestoes.Add(Questao19);
 
         var Questao20 = new Questao();
         Questao20.Nivel = 2;
@@ -253,7 +253,7 @@ public class Gerenciador
         Questao20.resposta4 = "Van Gogh";
         Questao20.resposta5 = "Monet";
         Questao20.respostacorreta = 2;
-        ListaQuestoes.Add(Questao20);
+        ListaTodasQuestoes.Add(Questao20);
 
         var Questao21 = new Questao();
         Questao21.Nivel = 3;
@@ -265,7 +265,7 @@ public class Gerenciador
         Questao21.resposta4 = "Saturno";
         Questao21.resposta5 = "Vênus";
         Questao21.respostacorreta = 3;
-        ListaQuestoes.Add(Questao21);
+        ListaTodasQuestoes.Add(Questao21);
 
         var Questao22 = new Questao();
         Questao22.Nivel = 3;
@@ -277,7 +277,7 @@ public class Gerenciador
         Questao22.resposta4 = "Ernest Hemingway";
         Questao22.resposta5 = "F. Scott Fitzgerald";
         Questao22.respostacorreta = 2;
-        ListaQuestoes.Add(Questao22);
+        ListaTodasQuestoes.Add(Questao22);
 
         var Questao23 = new Questao();
         Questao23.Nivel = 3;
@@ -289,7 +289,7 @@ public class Gerenciador
         Questao23.resposta4 = "Brisbane";
         Questao23.resposta5 = "Perth";
         Questao23.respostacorreta = 3;
-        ListaQuestoes.Add(Questao23);
+        ListaTodasQuestoes.Add(Questao23);
 
         var Questao24 = new Questao();
         Questao24.Nivel = 3;
@@ -301,7 +301,7 @@ public class Gerenciador
         Questao24.resposta4 = "Oceano Ártico";
         Questao24.resposta5 = "Oceano Antártico";
         Questao24.respostacorreta = 3;
-        ListaQuestoes.Add(Questao24);
+        ListaTodasQuestoes.Add(Questao24);
 
         var Questao25 = new Questao();
         Questao25.Nivel = 3;
@@ -313,7 +313,7 @@ public class Gerenciador
         Questao25.resposta4 = "Fe";
         Questao25.resposta5 = "Hg";
         Questao25.respostacorreta = 1;
-        ListaQuestoes.Add(Questao25);
+        ListaTodasQuestoes.Add(Questao25);
 
         var Questao26 = new Questao();
         Questao26.Nivel = 3;
@@ -325,7 +325,7 @@ public class Gerenciador
         Questao26.resposta4 = "Francês";
         Questao26.resposta5 = "Italiano";
         Questao26.respostacorreta = 2;
-        ListaQuestoes.Add(Questao26);
+        ListaTodasQuestoes.Add(Questao26);
 
         var Questao27 = new Questao();
         Questao27.Nivel = 3;
@@ -337,7 +337,7 @@ public class Gerenciador
         Questao27.resposta4 = "Claude Monet";
         Questao27.resposta5 = "Henri Matisse";
         Questao27.respostacorreta = 1;
-        ListaQuestoes.Add(Questao27);
+        ListaTodasQuestoes.Add(Questao27);
 
         var Questao28 = new Questao();
         Questao28.Nivel = 3;
@@ -349,7 +349,7 @@ public class Gerenciador
         Questao28.resposta4 = "Makalu";
         Questao28.resposta5 = "Lhotse";
         Questao28.respostacorreta = 3;
-        ListaQuestoes.Add(Questao28);
+        ListaTodasQuestoes.Add(Questao28);
 
         var Questao29 = new Questao();
         Questao29.Nivel = 3;
@@ -361,7 +361,7 @@ public class Gerenciador
         Questao29.resposta4 = "Estátua da Liberdade";
         Questao29.resposta5 = "Cristo Redentor";
         Questao29.respostacorreta = 1;
-        ListaQuestoes.Add(Questao29);
+        ListaTodasQuestoes.Add(Questao29);
 
         var Questao30 = new Questao();
         Questao30.Nivel = 3;
@@ -373,7 +373,7 @@ public class Gerenciador
         Questao30.resposta4 = "Hipopótamo";
         Questao30.resposta5 = "Orca";
         Questao30.respostacorreta = 2;
-        ListaQuestoes.Add(Questao30);
+        ListaTodasQuestoes.Add(Questao30);
 
         var Questao31 = new Questao();
         Questao31.Nivel = 4;
@@ -385,7 +385,7 @@ public class Gerenciador
         Questao31.resposta4 = "Lisboa";
         Questao31.resposta5 = "Roma";
         Questao31.respostacorreta = 3;
-        ListaQuestoes.Add(Questao31);
+        ListaTodasQuestoes.Add(Questao31);
 
         var Questao32 = new Questao();
         Questao32.Nivel = 4;
@@ -397,7 +397,7 @@ public class Gerenciador
         Questao32.resposta4 = "Ósmio";
         Questao32.resposta5 = "Oxônio";
         Questao32.respostacorreta = 2;
-        ListaQuestoes.Add(Questao32);
+        ListaTodasQuestoes.Add(Questao32);
 
         var Questao33 = new Questao();
         Questao33.Nivel = 4;
@@ -409,7 +409,7 @@ public class Gerenciador
         Questao33.resposta4 = "Árabe";
         Questao33.resposta5 = "Francês";
         Questao33.respostacorreta = 2;
-        ListaQuestoes.Add(Questao33);
+        ListaTodasQuestoes.Add(Questao33);
 
         var Questao34 = new Questao();
         Questao34.Nivel = 4;
@@ -421,7 +421,7 @@ public class Gerenciador
         Questao34.resposta4 = "Marte";
         Questao34.resposta5 = "Júpiter";
         Questao34.respostacorreta = 3;
-        ListaQuestoes.Add(Questao34);
+        ListaTodasQuestoes.Add(Questao34);
 
         var Questao35 = new Questao();
         Questao35.Nivel = 4;
@@ -433,7 +433,7 @@ public class Gerenciador
         Questao35.resposta4 = "Won";
         Questao35.resposta5 = "Rupia";
         Questao35.respostacorreta = 3;
-        ListaQuestoes.Add(Questao35);
+        ListaTodasQuestoes.Add(Questao35);
 
         var Questao36 = new Questao();
         Questao36.Nivel = 4;
@@ -445,7 +445,7 @@ public class Gerenciador
         Questao36.resposta4 = "Clarice Lispector";
         Questao36.resposta5 = "Graciliano Ramos";
         Questao36.respostacorreta = 2;
-        ListaQuestoes.Add(Questao36);
+        ListaTodasQuestoes.Add(Questao36);
 
         var Questao37 = new Questao();
         Questao37.Nivel = 4;
@@ -457,7 +457,7 @@ public class Gerenciador
         Questao37.resposta4 = "NaCl";
         Questao37.resposta5 = "C6H12O6";
         Questao37.respostacorreta = 1;
-        ListaQuestoes.Add(Questao37);
+        ListaTodasQuestoes.Add(Questao37);
 
         var Questao38 = new Questao();
         Questao38.Nivel = 4;
@@ -469,7 +469,7 @@ public class Gerenciador
         Questao38.resposta4 = "Lewis Carroll";
         Questao38.resposta5 = "Hans Christian Andersen";
         Questao38.respostacorreta = 1;
-        ListaQuestoes.Add(Questao38);
+        ListaTodasQuestoes.Add(Questao38);
 
         var Questao39 = new Questao();
         Questao39.Nivel = 4;
@@ -481,7 +481,7 @@ public class Gerenciador
         Questao39.resposta4 = "Mississippi";
         Questao39.resposta5 = "Ganges";
         Questao39.respostacorreta = 1;
-        ListaQuestoes.Add(Questao39);
+        ListaTodasQuestoes.Add(Questao39);
 
         var Questao40 = new Questao();
         Questao40.Nivel = 4;
@@ -493,7 +493,7 @@ public class Gerenciador
         Questao40.resposta4 = "Europa";
         Questao40.resposta5 = "Oceania";
         Questao40.respostacorreta = 3;
-        ListaQuestoes.Add(Questao40);
+        ListaTodasQuestoes.Add(Questao40);
 
         var Questao41 = new Questao();
         Questao41.Nivel = 5;
@@ -505,7 +505,7 @@ public class Gerenciador
         Questao41.resposta4 = "Deserto de Kalahari";
         Questao41.resposta5 = "Deserto de Atacama";
         Questao41.respostacorreta = 2;
-        ListaQuestoes.Add(Questao41);
+        ListaTodasQuestoes.Add(Questao41);
 
         var Questao42 = new Questao();
         Questao42.Nivel = 5;
@@ -517,7 +517,7 @@ public class Gerenciador
         Questao42.resposta4 = "John Glenn";
         Questao42.resposta5 = "Michael Collins";
         Questao42.respostacorreta = 2;
-        ListaQuestoes.Add(Questao42);
+        ListaTodasQuestoes.Add(Questao42);
 
         var Questao43 = new Questao();
         Questao43.Nivel = 5;
@@ -529,7 +529,7 @@ public class Gerenciador
         Questao43.resposta4 = "Florença";
         Questao43.resposta5 = "Nápoles";
         Questao43.respostacorreta = 2;
-        ListaQuestoes.Add(Questao43);
+        ListaTodasQuestoes.Add(Questao43);
 
         var Questao44 = new Questao();
         Questao44.Nivel = 5;
@@ -541,7 +541,7 @@ public class Gerenciador
         Questao44.resposta4 = "Oceano Ártico";
         Questao44.resposta5 = "Oceano Antártico";
         Questao44.respostacorreta = 3;
-        ListaQuestoes.Add(Questao44);
+        ListaTodasQuestoes.Add(Questao44);
 
         var Questao45 = new Questao();
         Questao45.Nivel = 5;
@@ -553,7 +553,7 @@ public class Gerenciador
         Questao45.resposta4 = "Michelangelo";
         Questao45.resposta5 = "Rembrandt";
         Questao45.respostacorreta = 3;
-        ListaQuestoes.Add(Questao45);
+        ListaTodasQuestoes.Add(Questao45);
 
         var Questao46 = new Questao();
         Questao46.Nivel = 5;
@@ -565,7 +565,7 @@ public class Gerenciador
         Questao46.resposta4 = "Lhotse";
         Questao46.resposta5 = "Makalu";
         Questao46.respostacorreta = 3;
-        ListaQuestoes.Add(Questao46);
+        ListaTodasQuestoes.Add(Questao46);
 
         var Questao47 = new Questao();
         Questao47.Nivel = 5;
@@ -577,7 +577,7 @@ public class Gerenciador
         Questao47.resposta4 = "Francês";
         Questao47.resposta5 = "Italiano";
         Questao47.respostacorreta = 3;
-        ListaQuestoes.Add(Questao47);
+        ListaTodasQuestoes.Add(Questao47);
 
         var Questao48 = new Questao();
         Questao48.Nivel = 5;
@@ -589,7 +589,7 @@ public class Gerenciador
         Questao48.resposta4 = "Rússia";
         Questao48.resposta5 = "Brasil";
         Questao48.respostacorreta = 4;
-        ListaQuestoes.Add(Questao48);
+        ListaTodasQuestoes.Add(Questao48);
 
         var Questao49 = new Questao();
         Questao49.Nivel = 5;
@@ -601,7 +601,7 @@ public class Gerenciador
         Questao49.resposta4 = "Hg";
         Questao49.resposta5 = "Pb";
         Questao49.respostacorreta = 1;
-        ListaQuestoes.Add(Questao49);
+        ListaTodasQuestoes.Add(Questao49);
 
         var Questao50 = new Questao();
         Questao50.Nivel = 5;
@@ -613,7 +613,7 @@ public class Gerenciador
         Questao50.resposta4 = "Albert Bandura";
         Questao50.resposta5 = "Erik Erikson";
         Questao50.respostacorreta = 2;
-        ListaQuestoes.Add(Questao50);
+        ListaTodasQuestoes.Add(Questao50);
 
         var Questao51 = new Questao();
         Questao51.Nivel = 6;
@@ -625,7 +625,7 @@ public class Gerenciador
         Questao51.resposta4 = "Cristo Redentor";
         Questao51.resposta5 = "Estátua da Liberdade";
         Questao51.respostacorreta = 1;
-        ListaQuestoes.Add(Questao51);
+        ListaTodasQuestoes.Add(Questao51);
 
         var Questao52 = new Questao();
         Questao52.Nivel = 6;
@@ -637,7 +637,7 @@ public class Gerenciador
         Questao52.resposta4 = "Brisbane";
         Questao52.resposta5 = "Perth";
         Questao52.respostacorreta = 3;
-        ListaQuestoes.Add(Questao52);
+        ListaTodasQuestoes.Add(Questao52);
 
         var Questao53 = new Questao();
         Questao53.Nivel = 6;
@@ -649,7 +649,7 @@ public class Gerenciador
         Questao53.resposta4 = "Hipopótamo";
         Questao53.resposta5 = "Tigre";
         Questao53.respostacorreta = 1;
-        ListaQuestoes.Add(Questao53);
+        ListaTodasQuestoes.Add(Questao53);
 
         var Questao54 = new Questao();
         Questao54.Nivel = 6;
@@ -661,7 +661,7 @@ public class Gerenciador
         Questao54.resposta4 = "Margaret Atwood";
         Questao54.resposta5 = "Isaac Asimov";
         Questao54.respostacorreta = 2;
-        ListaQuestoes.Add(Questao54);
+        ListaTodasQuestoes.Add(Questao54);
 
         var Questao55 = new Questao();
         Questao55.Nivel = 6;
@@ -673,7 +673,7 @@ public class Gerenciador
         Questao55.resposta4 = "Estocolmo";
         Questao55.resposta5 = "Helsinque";
         Questao55.respostacorreta = 2;
-        ListaQuestoes.Add(Questao55);
+        ListaTodasQuestoes.Add(Questao55);
 
         var Questao56 = new Questao();
         Questao56.Nivel = 6;
@@ -685,7 +685,7 @@ public class Gerenciador
         Questao56.resposta4 = "Urano";
         Questao56.resposta5 = "Marte";
         Questao56.respostacorreta = 2;
-        ListaQuestoes.Add(Questao56);
+        ListaTodasQuestoes.Add(Questao56);
 
         var Questao57 = new Questao();
         Questao57.Nivel = 6;
@@ -697,7 +697,7 @@ public class Gerenciador
         Questao57.resposta4 = "Euro";
         Questao57.resposta5 = "Coroa Sueca";
         Questao57.respostacorreta = 4;
-        ListaQuestoes.Add(Questao57);
+        ListaTodasQuestoes.Add(Questao57);
 
         var Questao58 = new Questao();
         Questao58.Nivel = 6;
@@ -709,7 +709,7 @@ public class Gerenciador
         Questao58.resposta4 = "C3O2";
         Questao58.resposta5 = "C2H2";
         Questao58.respostacorreta = 2;
-        ListaQuestoes.Add(Questao58);
+        ListaTodasQuestoes.Add(Questao58);
 
         var Questao59 = new Questao();
         Questao59.Nivel = 6;
@@ -721,7 +721,7 @@ public class Gerenciador
         Questao59.resposta4 = "Caravaggio";
         Questao59.resposta5 = "Donatello";
         Questao59.respostacorreta = 3;
-        ListaQuestoes.Add(Questao59);
+        ListaTodasQuestoes.Add(Questao59);
 
         var Questao60 = new Questao();
         Questao60.Nivel = 6;
@@ -733,7 +733,7 @@ public class Gerenciador
         Questao60.resposta4 = "Volt";
         Questao60.resposta5 = "Ampère";
         Questao60.respostacorreta = 1;
-        ListaQuestoes.Add(Questao60);
+        ListaTodasQuestoes.Add(Questao60);
 
         var Questao61 = new Questao();
         Questao61.Nivel = 7;
@@ -745,7 +745,7 @@ public class Gerenciador
         Questao61.resposta4 = "Macbeth";
         Questao61.resposta5 = "Sonetos";
         Questao61.respostacorreta = 3;
-        ListaQuestoes.Add(Questao61);
+        ListaTodasQuestoes.Add(Questao61);
 
         var Questao62 = new Questao();
         Questao62.Nivel = 7;
@@ -757,7 +757,7 @@ public class Gerenciador
         Questao62.resposta4 = "Hamilton";
         Questao62.resposta5 = "Dunedin";
         Questao62.respostacorreta = 2;
-        ListaQuestoes.Add(Questao62);
+        ListaTodasQuestoes.Add(Questao62);
 
         var Questao63 = new Questao();
         Questao63.Nivel = 7;
@@ -769,7 +769,7 @@ public class Gerenciador
         Questao63.resposta4 = "Budismo";
         Questao63.resposta5 = "Hinduísmo";
         Questao63.respostacorreta = 3;
-        ListaQuestoes.Add(Questao63);
+        ListaTodasQuestoes.Add(Questao63);
 
         var Questao64 = new Questao();
         Questao64.Nivel = 7;
@@ -781,7 +781,7 @@ public class Gerenciador
         Questao64.resposta4 = "Números";
         Questao64.resposta5 = "Deuteronômio";
         Questao64.respostacorreta = 3;
-        ListaQuestoes.Add(Questao64);
+        ListaTodasQuestoes.Add(Questao64);
 
         var Questao65 = new Questao();
         Questao65.Nivel = 7;
@@ -793,7 +793,7 @@ public class Gerenciador
         Questao65.resposta4 = "CaCl2";
         Questao65.resposta5 = "Na2SO4";
         Questao65.respostacorreta = 1;
-        ListaQuestoes.Add(Questao65);
+        ListaTodasQuestoes.Add(Questao65);
 
         var Questao66 = new Questao();
         Questao66.Nivel = 7;
@@ -805,7 +805,7 @@ public class Gerenciador
         Questao66.resposta4 = "Mercúrio";
         Questao66.resposta5 = "Saturno";
         Questao66.respostacorreta = 1;
-        ListaQuestoes.Add(Questao66);
+        ListaTodasQuestoes.Add(Questao66);
 
         var Questao67 = new Questao();
         Questao67.Nivel = 7;
@@ -817,7 +817,7 @@ public class Gerenciador
         Questao67.resposta4 = "Lisboa";
         Questao67.resposta5 = "Berlim";
         Questao67.respostacorreta = 1;
-        ListaQuestoes.Add(Questao67);
+        ListaTodasQuestoes.Add(Questao67);
 
         var Questao68 = new Questao();
         Questao68.Nivel = 7;
@@ -829,7 +829,7 @@ public class Gerenciador
         Questao68.resposta4 = "Montreal";
         Questao68.resposta5 = "Calgary";
         Questao68.respostacorreta = 3;
-        ListaQuestoes.Add(Questao68);
+        ListaTodasQuestoes.Add(Questao68);
 
         var Questao69 = new Questao();
         Questao69.Nivel = 7;
@@ -841,7 +841,7 @@ public class Gerenciador
         Questao69.resposta4 = "N";
         Questao69.resposta5 = "C";
         Questao69.respostacorreta = 1;
-        ListaQuestoes.Add(Questao69);
+        ListaTodasQuestoes.Add(Questao69);
 
         var Questao70 = new Questao();
         Questao70.Nivel = 7;
@@ -853,7 +853,7 @@ public class Gerenciador
         Questao70.resposta4 = "Madonna";
         Questao70.resposta5 = "Freddie Mercury";
         Questao70.respostacorreta = 2;
-        ListaQuestoes.Add(Questao70);
+        ListaTodasQuestoes.Add(Questao70);
 
         var Questao71 = new Questao();
         Questao71.Nivel = 8;
@@ -865,7 +865,7 @@ public class Gerenciador
         Questao71.resposta4 = "Genética";
         Questao71.resposta5 = "Citoquímica";
         Questao71.respostacorreta = 1;
-        ListaQuestoes.Add(Questao71);
+        ListaTodasQuestoes.Add(Questao71);
 
         var Questao72 = new Questao();
         Questao72.Nivel = 8;
@@ -877,7 +877,7 @@ public class Gerenciador
         Questao72.resposta4 = "William Shakespeare";
         Questao72.resposta5 = "Victor Hugo";
         Questao72.respostacorreta = 2;
-        ListaQuestoes.Add(Questao72);
+        ListaTodasQuestoes.Add(Questao72);
 
         var Questao73 = new Questao();
         Questao73.Nivel = 8;
@@ -889,7 +889,7 @@ public class Gerenciador
         Questao73.resposta4 = "Transporte de nutrientes";
         Questao73.resposta5 = "Produção de hormônios";
         Questao73.respostacorreta = 2;
-        ListaQuestoes.Add(Questao73);
+        ListaTodasQuestoes.Add(Questao73);
 
         var Questao74 = new Questao();
         Questao74.Nivel = 8;
@@ -901,7 +901,7 @@ public class Gerenciador
         Questao74.resposta4 = "Floresta Boreal";
         Questao74.resposta5 = "Floresta Atlântica";
         Questao74.respostacorreta = 1;
-        ListaQuestoes.Add(Questao74);
+        ListaTodasQuestoes.Add(Questao74);
 
         var Questao75 = new Questao();
         Questao75.Nivel = 8;
@@ -913,7 +913,7 @@ public class Gerenciador
         Questao75.resposta4 = "Tóquio";
         Questao75.resposta5 = "Pequim";
         Questao75.respostacorreta = 2;
-        ListaQuestoes.Add(Questao75);
+        ListaTodasQuestoes.Add(Questao75);
 
         var Questao76 = new Questao();
         Questao76.Nivel = 8;
@@ -925,7 +925,7 @@ public class Gerenciador
         Questao76.resposta4 = "Nátron";
         Questao76.resposta5 = "Cálcio";
         Questao76.respostacorreta = 2;
-        ListaQuestoes.Add(Questao76);
+        ListaTodasQuestoes.Add(Questao76);
 
         var Questao77 = new Questao();
         Questao77.Nivel = 8;
@@ -937,7 +937,7 @@ public class Gerenciador
         Questao77.resposta4 = "Boccaccio";
         Questao77.resposta5 = "Petrarca";
         Questao77.respostacorreta = 1;
-        ListaQuestoes.Add(Questao77);
+        ListaTodasQuestoes.Add(Questao77);
 
         var Questao78 = new Questao();
         Questao78.Nivel = 8;
@@ -949,7 +949,7 @@ public class Gerenciador
         Questao78.resposta4 = "Digestão";
         Questao78.resposta5 = "Fermentação";
         Questao78.respostacorreta = 1;
-        ListaQuestoes.Add(Questao78);
+        ListaTodasQuestoes.Add(Questao78);
 
         var Questao79 = new Questao();
         Questao79.Nivel = 8;
@@ -961,7 +961,7 @@ public class Gerenciador
         Questao79.resposta4 = "Cristo de Assunção";
         Questao79.resposta5 = "Cristo de Buenos Aires";
         Questao79.respostacorreta = 2;
-        ListaQuestoes.Add(Questao79);
+        ListaTodasQuestoes.Add(Questao79);
 
         var Questao80 = new Questao();
         Questao80.Nivel = 8;
@@ -973,7 +973,7 @@ public class Gerenciador
         Questao80.resposta4 = "Oceano Ártico";
         Questao80.resposta5 = "Oceano Antártico";
         Questao80.respostacorreta = 3;
-        ListaQuestoes.Add(Questao80);
+        ListaTodasQuestoes.Add(Questao80);
 
         var Questao81 = new Questao();
         Questao81.Nivel = 9;
@@ -985,7 +985,7 @@ public class Gerenciador
         Questao81.resposta4 = "Galileu Galilei";
         Questao81.resposta5 = "Stephen Hawking";
         Questao81.respostacorreta = 3;
-        ListaQuestoes.Add(Questao81);
+        ListaTodasQuestoes.Add(Questao81);
 
         var Questao82 = new Questao();
         Questao82.Nivel = 9;
@@ -997,7 +997,7 @@ public class Gerenciador
         Questao82.resposta4 = "Brisbane";
         Questao82.resposta5 = "Perth";
         Questao82.respostacorreta = 3;
-        ListaQuestoes.Add(Questao82);
+        ListaTodasQuestoes.Add(Questao82);
 
         var Questao83 = new Questao();
         Questao83.Nivel = 9;
@@ -1009,7 +1009,7 @@ public class Gerenciador
         Questao83.resposta4 = "H2O2";
         Questao83.resposta5 = "C6H12O6";
         Questao83.respostacorreta = 1;
-        ListaQuestoes.Add(Questao83);
+        ListaTodasQuestoes.Add(Questao83);
 
         var Questao84 = new Questao();
         Questao84.Nivel = 9;
@@ -1021,7 +1021,7 @@ public class Gerenciador
         Questao84.resposta4 = "Valência";
         Questao84.resposta5 = "Bilbau";
         Questao84.respostacorreta = 1;
-        ListaQuestoes.Add(Questao84);
+        ListaTodasQuestoes.Add(Questao84);
 
         var Questao85 = new Questao();
         Questao85.Nivel = 9;
@@ -1033,7 +1033,7 @@ public class Gerenciador
         Questao85.resposta4 = "Jorge Amado";
         Questao85.resposta5 = "Raquel de Queiroz";
         Questao85.respostacorreta = 1;
-        ListaQuestoes.Add(Questao85);
+        ListaTodasQuestoes.Add(Questao85);
 
         var Questao86 = new Questao();
         Questao86.Nivel = 9;
@@ -1045,7 +1045,7 @@ public class Gerenciador
         Questao86.resposta4 = "Iene";
         Questao86.resposta5 = "Peso";
         Questao86.respostacorreta = 4;
-        ListaQuestoes.Add(Questao86);
+        ListaTodasQuestoes.Add(Questao86);
 
         var Questao87 = new Questao();
         Questao87.Nivel = 9;
@@ -1057,7 +1057,7 @@ public class Gerenciador
         Questao87.resposta4 = "Marte";
         Questao87.resposta5 = "Júpiter";
         Questao87.respostacorreta = 3;
-        ListaQuestoes.Add(Questao87);
+        ListaTodasQuestoes.Add(Questao87);
 
         var Questao88 = new Questao();
         Questao88.Nivel = 9;
@@ -1069,7 +1069,7 @@ public class Gerenciador
         Questao88.resposta4 = "Hipopótamo";
         Questao88.resposta5 = "Urso Polar";
         Questao88.respostacorreta = 2;
-        ListaQuestoes.Add(Questao88);
+        ListaTodasQuestoes.Add(Questao88);
 
         var Questao89 = new Questao();
         Questao89.Nivel = 9;
@@ -1081,7 +1081,7 @@ public class Gerenciador
         Questao89.resposta4 = "Carvão";
         Questao89.resposta5 = "Gás Natural";
         Questao89.respostacorreta = 2;
-        ListaQuestoes.Add(Questao89);
+        ListaTodasQuestoes.Add(Questao89);
 
         var Questao90 = new Questao();
         Questao90.Nivel = 9;
@@ -1093,7 +1093,7 @@ public class Gerenciador
         Questao90.resposta4 = "Oganessônio";
         Questao90.resposta5 = "Ondínio";
         Questao90.respostacorreta = 2;
-        ListaQuestoes.Add(Questao90);
+        ListaTodasQuestoes.Add(Questao90);
 
         var Questao91 = new Questao();
         Questao91.Nivel = 10;
@@ -1105,7 +1105,7 @@ public class Gerenciador
         Questao91.resposta4 = "Tailândia";
         Questao91.resposta5 = "Filipinas";
         Questao91.respostacorreta = 3;
-        ListaQuestoes.Add(Questao91);
+        ListaTodasQuestoes.Add(Questao91);
 
         var Questao92 = new Questao();
         Questao92.Nivel = 10;
@@ -1117,7 +1117,7 @@ public class Gerenciador
         Questao92.resposta4 = "Pulmão";
         Questao92.resposta5 = "Rim";
         Questao92.respostacorreta = 3;
-        ListaQuestoes.Add(Questao92);
+        ListaTodasQuestoes.Add(Questao92);
 
         var Questao93 = new Questao();
         Questao93.Nivel = 10;
@@ -1129,7 +1129,7 @@ public class Gerenciador
         Questao93.resposta4 = "Nápoles";
         Questao93.resposta5 = "Florença";
         Questao93.respostacorreta = 1;
-        ListaQuestoes.Add(Questao93);
+        ListaTodasQuestoes.Add(Questao93);
 
         var Questao94 = new Questao();
         Questao94.Nivel = 10;
@@ -1141,7 +1141,7 @@ public class Gerenciador
         Questao94.resposta4 = "HCl";
         Questao94.resposta5 = "NH4Cl";
         Questao94.respostacorreta = 1;
-        ListaQuestoes.Add(Questao94);
+        ListaTodasQuestoes.Add(Questao94);
 
         var Questao95 = new Questao();
         Questao95.Nivel = 10;
@@ -1153,7 +1153,7 @@ public class Gerenciador
         Questao95.resposta4 = "Dingo";
         Questao95.resposta5 = "Wallaby";
         Questao95.respostacorreta = 1;
-        ListaQuestoes.Add(Questao95);
+        ListaTodasQuestoes.Add(Questao95);
 
         var Questao96 = new Questao();
         Questao96.Nivel = 10;
@@ -1165,7 +1165,7 @@ public class Gerenciador
         Questao96.resposta4 = "Fricção";
         Questao96.resposta5 = "Empuxo";
         Questao96.respostacorreta = 3;
-        ListaQuestoes.Add(Questao96);
+        ListaTodasQuestoes.Add(Questao96);
 
         var Questao97 = new Questao();
         Questao97.Nivel = 10;
@@ -1177,7 +1177,7 @@ public class Gerenciador
         Questao97.resposta4 = "Watt";
         Questao97.resposta5 = "Ampere";
         Questao97.respostacorreta = 2;
-        ListaQuestoes.Add(Questao97);
+        ListaTodasQuestoes.Add(Questao97);
 
         var Questao98 = new Questao();
         Questao98.Nivel = 10;
@@ -1189,7 +1189,7 @@ public class Gerenciador
         Questao98.resposta4 = "Hélio";
         Questao98.resposta5 = "Argônio";
         Questao98.respostacorreta = 2;
-        ListaQuestoes.Add(Questao98);
+        ListaTodasQuestoes.Add(Questao98);
 
         var Questao99 = new Questao();
         Questao99.Nivel = 10;
@@ -1201,7 +1201,7 @@ public class Gerenciador
         Questao99.resposta4 = "Digestão";
         Questao99.resposta5 = "Transpiração";
         Questao99.respostacorreta = 3;
-        ListaQuestoes.Add(Questao99);
+        ListaTodasQuestoes.Add(Questao99);
 
         var Questao100 = new Questao();
         Questao100.Nivel = 10;
@@ -1213,24 +1213,19 @@ public class Gerenciador
         Questao100.resposta4 = "Colônia";
         Questao100.resposta5 = "Frankfurt";
         Questao100.respostacorreta = 1;
-        ListaQuestoes.Add(Questao100);
+        ListaTodasQuestoes.Add(Questao100);
 
         ProximaQuestao();
     }
     void ProximaQuestao()
     {
-        var NumAleat = Random.Shared.Next(0, ListaQuestoes.Count);
-        while (ListaQuestoesRespondidas.Contains(NumAleat))
-            NumAleat = Random.Shared.Next(0, ListaQuestoesRespondidas.Count);
-        ListaQuestoesRespondidas.Add(NumAleat);
-        QuestaoCorrente = ListaQuestoes[NumAleat];
-        QuestaoCorrente.desenhar();
+       var ListaQuestoes = ListaTodasQuestoes.Where(d=>d.Nivel==NivelCorrente).ToList();
     }
     public int Pontuacao { get; private set; }
     int NivelAtual =1;
     void Inicializar()
     {
-        ListaQuestoesRespondidas.Clear();
+        ListaTodasQuestoesRespondidas.Clear();
         Pontuacao = 0;
         NivelAtual = 1;
         ProximaQuestao();

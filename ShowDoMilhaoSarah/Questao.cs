@@ -1,5 +1,9 @@
 public class Questao:IEquatable<Questao>
-{ 
+{
+public Questao()
+{
+
+}
     public bool Equals(Questao q)
     {
         return this.Nivel == q.Nivel;
@@ -93,3 +97,4 @@ public class Questao:IEquatable<Questao>
         return null;
     }
 }
+

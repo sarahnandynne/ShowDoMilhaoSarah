@@ -1219,7 +1219,17 @@ public class Gerenciador
     }
     void ProximaQuestao()
     {
-       var ListaQuestoes = ListaTodasQuestoes.Where(d=>d.Nivel==NivelCorrente).ToList();
+       var ListaQuestoes = ListaTodasQuestoes.Where(d=>d.Nivel==NivelAtual).ToList();
+       var NumAlet = Random.Shared.Next(0, ListaQuestoes.Count-1);
+       var NovaQuestao = ListaQuestoes[NumAlet];
+       while (ListaTodasQuestoesRespondidas.Contains(NovaQuestao))
+       {
+        NumAlet = Random.Shared.Next(0, ListaQuestoes.Count-1);
+        NovaQuestao = ListaQuestoes[NumAlet];
+       }
+       ListaTodasQuestoesRespondidas.Add(NovaQuestao);
+       QuestaoCorrente = NovaQuestao;
+       QuestaoCorrente.desenhar();
     }
     public int Pontuacao { get; private set; }
     int NivelAtual =1;

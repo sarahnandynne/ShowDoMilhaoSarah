@@ -122,7 +122,7 @@
                         Grid.ColumnSpan="3"/>
 
 
-                <Button Text="1 INCORRETA"
+                <Button Text="3 ERRADAS"
                         BorderWidth="2"
                         Padding=".12"
                         TextColor="Black"
@@ -133,7 +133,7 @@
                         Grid.Row="8"
                         Grid.Column="0"/>
 
-                <Button Text="AMIGOS"
+                <Button Text="PULAR"
                         BorderWidth="2"
                         Padding=".12"
                         TextColor="Black"

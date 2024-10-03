@@ -6,7 +6,7 @@ public Questao()
 }
     public bool Equals(Questao q)
     {
-        return this.Nivel == q.Nivel;
+        return this.Nivel == q.Nivel && this.pergunta==q.pergunta;
     }
     public string pergunta { get; set; }
     public string resposta1 { get; set; }
@@ -37,6 +37,12 @@ public Questao()
         btResposta04!.TextColor       = Colors.White;
         btResposta05!.BackgroundColor = Colors.DarkBlue;
         btResposta05!.TextColor       = Colors.White;
+
+        btResposta01.IsVisible = true;
+        btResposta02.IsVisible = true;
+        btResposta03.IsVisible = true;
+        btResposta04.IsVisible = true;
+        btResposta05.IsVisible = true;
     }
 
     private Label labelPergunta;

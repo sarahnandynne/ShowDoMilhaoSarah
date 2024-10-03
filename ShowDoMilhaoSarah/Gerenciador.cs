@@ -13,6 +13,10 @@ public class Gerenciador
         this.labelPontuacao = labelPontuacao;
         this.labelNivel = labelNivel;
     }
+    public Questao GetQuestaoCorrente()
+    {
+        return QuestaoCorrente;
+    }
     void CriarPerguntas(Label labelPergunta, Button btResposta01, Button btResposta02, Button btResposta03, Button btResposta04, Button btResposta05)
     {
         var Questao01 = new Questao();
@@ -1217,22 +1221,22 @@ public class Gerenciador
 
         ProximaQuestao();
     }
-    void ProximaQuestao()
+    public void ProximaQuestao()
     {
-       var ListaQuestoes = ListaTodasQuestoes.Where(d=>d.Nivel==NivelAtual).ToList();
-       var NumAlet = Random.Shared.Next(0, ListaQuestoes.Count-1);
-       var NovaQuestao = ListaQuestoes[NumAlet];
-       while (ListaTodasQuestoesRespondidas.Contains(NovaQuestao))
-       {
-        NumAlet = Random.Shared.Next(0, ListaQuestoes.Count-1);
-        NovaQuestao = ListaQuestoes[NumAlet];
-       }
-       ListaTodasQuestoesRespondidas.Add(NovaQuestao);
-       QuestaoCorrente = NovaQuestao;
-       QuestaoCorrente.desenhar();
+        var ListaQuestoes = ListaTodasQuestoes.Where(d => d.Nivel == NivelAtual).ToList();
+        var NumAlet = Random.Shared.Next(0, ListaQuestoes.Count - 1);
+        var NovaQuestao = ListaQuestoes[NumAlet];
+        while (ListaTodasQuestoesRespondidas.Contains(NovaQuestao))
+        {
+            NumAlet = Random.Shared.Next(0, ListaQuestoes.Count - 1);
+            NovaQuestao = ListaQuestoes[NumAlet];
+        }
+        ListaTodasQuestoesRespondidas.Add(NovaQuestao);
+        QuestaoCorrente = NovaQuestao;
+        QuestaoCorrente.desenhar();
     }
     public int Pontuacao { get; private set; }
-    int NivelAtual =1;
+    int NivelAtual = 1;
     void Inicializar()
     {
         ListaTodasQuestoesRespondidas.Clear();
@@ -1248,7 +1252,7 @@ public class Gerenciador
             AdicionaPontuacao(NivelAtual);
             NivelAtual++;
             if (NivelAtual == 10)
-            await App.Current.MainPage.DisplayAlert("VOCÊ ACERTOU TUDO!", "PARABÉNS!", "OK");
+                await App.Current.MainPage.DisplayAlert("VOCÊ ACERTOU TUDO!", "PARABÉNS!", "OK");
             ProximaQuestao();
         }
         else

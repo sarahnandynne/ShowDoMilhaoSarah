@@ -123,6 +123,7 @@
 
 
                 <Button Text="3 ERRADAS"
+                        Clicked="RetirarClicked"
                         BorderWidth="2"
                         Padding=".12"
                         TextColor="Black"
@@ -134,6 +135,7 @@
                         Grid.Column="0"/>
 
                 <Button Text="PULAR"
+                        Clicked="PularClicked"
                         BorderWidth="2"
                         Padding=".12"
                         TextColor="Black"

@@ -146,13 +146,14 @@
                         Grid.Row="8"
                         Grid.Column="1"/>
 
-                <Button Text="+1 CHANCE"
+                <Button Text="UNIVERSITÁRIOS"
+                        Clicked="UniversitariosClicked"
                         BorderWidth="2"
                         Padding="12"
                         TextColor="Black"
                         BackgroundColor="#a7e0d8"
                         Margin="0,0,0,10"
-                        FontSize="15"
+                        FontSize="12"
                         BorderColor="Black"
                         Grid.Row="8"
                         Grid.Column="2"/>

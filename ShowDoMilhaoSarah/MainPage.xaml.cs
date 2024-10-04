@@ -44,5 +44,12 @@ namespace ShowDoMilhaoSarah
             gerenciador.ProximaQuestao();
             (s as Button).IsVisible = false;
         }
+         void UniversitariosClicked (object s, EventArgs e)
+        {
+            var ajuda = new Universitarios();
+            ajuda.ConfigurarEstruturaDesenho (btResposta01, btResposta02, btResposta03, btResposta04, btResposta05);
+            ajuda.RealizaAjuda(gerenciador.GetQuestaoCorrente());
+            (s as Button).IsVisible = false;
+        }
     }
 }

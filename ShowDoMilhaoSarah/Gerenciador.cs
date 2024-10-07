@@ -1252,7 +1252,7 @@ public class Gerenciador
             AdicionaPontuacao(NivelAtual);
             NivelAtual++;
             if (NivelAtual == 10)
-                await App.Current.MainPage.DisplayAlert("VOCÊ ACERTOU TUDO!", "PARABÉNS!", "OK");
+            await App.Current.MainPage.DisplayAlert("VOCÊ ACERTOU TUDO!", "PARABÉNS!", "OK");
             ProximaQuestao();
         }
         else

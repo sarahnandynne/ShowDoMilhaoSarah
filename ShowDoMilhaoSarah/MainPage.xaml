@@ -134,8 +134,32 @@
                         Grid.Row="8"
                         Grid.Column="0"/>
 
-                <Button Text="PULAR"
-                        Clicked="PularClicked"
+                <Button Text="PULAR 1X"
+                        Clicked="PularClicked3X"
+                        BorderWidth="2"
+                        Padding=".12"
+                        TextColor="Black"
+                        BackgroundColor="#a7e0d8"
+                        Margin="0,0,0,10"
+                        FontSize="15"
+                        BorderColor="Black"
+                        Grid.Row="8"
+                        Grid.Column="1"/>
+
+                <Button Text="PULAR 2X"
+                        Clicked="PularClicked2X"
+                        BorderWidth="2"
+                        Padding=".12"
+                        TextColor="Black"
+                        BackgroundColor="#a7e0d8"
+                        Margin="0,0,0,10"
+                        FontSize="15"
+                        BorderColor="Black"
+                        Grid.Row="8"
+                        Grid.Column="1"/>
+
+                <Button Text="PULAR 3X"
+                        Clicked="PularClicked1X"
                         BorderWidth="2"
                         Padding=".12"
                         TextColor="Black"

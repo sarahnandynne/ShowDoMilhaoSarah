@@ -1,4 +1,4 @@
-﻿using AuthenticationServices;
+﻿
 using Microsoft.Maui.Controls;
 
 namespace ShowDoMilhaoSarah
@@ -41,17 +41,22 @@ namespace ShowDoMilhaoSarah
             (s as Button).IsVisible = false;
         }
         int pulou = 1;
-        void PularClicked (object s, EventArgs e)
+        void PularClicked3X (object s, EventArgs e)
         {
-            if (pulou == 3)
-            (s as Button).IsVisible = false;
-            else
-            {
             gerenciador.ProximaQuestao();
-            pulou ++;
-            }
+            (s as Button).IsVisible = false;
         }
+        void PularClicked2X (object s, EventArgs e)
+        {
+            gerenciador.ProximaQuestao();
+            (s as Button).IsVisible = false;
         }
+        void PularClicked1X (object s, EventArgs e)
+        {
+             gerenciador.ProximaQuestao();
+            (s as Button).IsVisible = false;
+        }
+    
          void UniversitariosClicked (object s, EventArgs e)
         {
             var ajuda = new Universitarios();
@@ -60,3 +65,4 @@ namespace ShowDoMilhaoSarah
             (s as Button).IsVisible = false;
         }
     }
+}
